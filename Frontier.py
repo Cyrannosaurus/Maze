@@ -195,7 +195,7 @@ class HeapFrontier(Frontier):
 class BeamFrontier():
     """ 
     A frontier for Beam Search
-    Like QueueFrontier but only adds the best few predeccessor states from any given state as defined by 'width'
+    Like QueueFrontier but only adds the best few successor states from any given state as defined by 'width'
     """
 
     def __init__(self, width: int = sys.maxsize):
